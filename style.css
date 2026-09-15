@@ -1,0 +1,76 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(195, 221, 221);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+/* 
+div{
+    height: 200px;
+    width: 300px;
+    background-color: blue;
+    margin: 20px;
+    animation-name: box;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+   transform: skewX(50deg);
+}
+@keyframes box{
+    0%{ scale: 0.5;}
+    50%{ scale: 1;}
+    100%{ scale: 1.5;}
+} */
+ .container{
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+h1{
+    margin: 20px;
+}
+img{
+    width: 100%;
+    height: 400px; 
+}
+ .p1{
+max-width: 600px;
+font-size: medium;
+}
+.p2{
+   max-width: 320px; 
+   font-size: small;
+
+}
+.text{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+@media (max-width: 500px){
+    .container{
+        padding: 10px;
+    }
+    .p1, .p2{
+        max-width: 100%;
+    }
+    .text{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
